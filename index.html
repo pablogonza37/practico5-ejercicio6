@@ -18,9 +18,23 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Ejercico 6 tp5</title>
 </head>
-<body>
+<body class="bg-black">
     <main>
-        
+        <div class="container-fluid text-center w-100 d-flex flex-column">
+            <h1 class="h1 text-center text-white my-4 display-3">Temporizador</h1>
+            <div class="tiempo-ingresado row d-flex flex-column">
+                <label for="tiempo" class="text-white w-100">Ingrese el tiempo en segundos:</label>
+                <input class="form-control w-50 mt-3" id="tiempo" type="number" min="1" placeholder="Tiempo en segundos">
+                <button class="btn btn-danger w-50 mt-4" onclick="configurarTemporizador()">Configurar</button>
+              </div>
+            <div id="temporizador" class="display-1 text-white">00:00:00</div>
+            <div class="botones-container">
+              <button class="btn btn-primary" onclick="iniciarTemporizador()">Iniciar</button>
+              <button class="btn btn-success" onclick="pausarTemporizador()">Pausar</button>
+              <button class="btn btn-warning" onclick="resetearTemporizador()">Reset</button>
+            </div>
+            
+          </div>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

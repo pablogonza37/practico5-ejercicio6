@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  
+  #temporizador {
+    font-size: 200px;
+    margin: 20px 0;
+  }
+  
+  .botones-container button {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    margin: 20px 15px;
+    cursor: pointer;
+  }
+  
+  .tiempo-ingresado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cantainer-fluid{
+    margin: 0;
+  }
+  
+  @media all and (max-width: 767px){
+    #temporizador {
+      font-size: 65px;
+      margin: 10px 0;
+    }
+    .botones-container button {
+      width: 200px;
+      height: 40px;
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .botones-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    }
+    
+    @media all and (min-width: 768px) and (max-width: 991px){
+      #temporizador {
+        font-size: 150px;
+        margin: 10px 0;
+      }
+      .botones-container button {
+        width: 180px;
+        height: 70px;
+        font-size: 30px;
+        margin: 20px 15px;
+        
+      }
+    
+    }
+    @media all and (min-width: 992px){
+        
+    }
+    
+  
+  
